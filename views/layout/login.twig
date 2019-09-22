@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Prudent System</title>
+        
+        <!-- this is for include the css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="metisMenu.min.css"/>
+        <link rel="stylesheet" href="styles/startmin.css"/>
+        <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="stylesheet" href="font-awesome.min.css"/>
+
+        <!-- this is for include the js -->
+        <script src="jquery.min.js"></script>
+        <script src="jquery.validate.min.js"></script>
+        
+        
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"/> -->
+
+        <!-- <link rel="stylesheet" href="styles/morris.css"> -->
+
+    </head>
+    
+        
+
+        <body class="login-bg">   
+            <div class="login-page">
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <div class="login-panel panel panel-default">
+                            <div class="panel-heading">
+                              <form role="form" class="form-horizontal"  action="/post_custome_login" method="post" id="loginForm" name="loginForm">
+                                <input type="radio" name="client"  value="client" style="margin: 7px 12px 4px; display: none;">Team<input type="radio" name="client" value="Users" style="margin: 7px 12px 4px;display: none;" checked="">Up
+                                <!-- <h3 class="panel-title">Please Sign In</h3> -->
+                            </div>
+                            <div class="panel-body">
+                                
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="E-mail" name="email" type="text" autofocus>
+                                        </div>
+
+                                        {% if errors.email %}
+                                            <p class="error" style="margin-top: 9px; margin-left: 2px; color: red;">{{ errors.email.msg }}</p>
+                                        {% endif %}    
+                                        
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                        </div>
+
+                                        {% if errors.password %}
+                                            <p class="error" style="margin-top: 9px; margin-left: 2px; color: red;">{{ errors.password.msg }}</p>
+                                        {% endif %}
+                                        
+                                        <div class="checkbox">
+                                            <label>
+                                                <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="btn-box">
+                                            <button type="submit" class="custom-btn-primary btn-block">
+                                                <span class="txt">Log In</span>
+                                                <span class="round"><i class="fa fa-chevron-right"></i></span>
+                                            </button>
+                                        </div>
+
+                                        {% if Invalid %}
+                                            <p class="error" style="margin-top: 9px; margin-left: 2px; color: red;">{{ Invalid }}</p>
+                                        {% endif %}
+
+                                        
+                                        <div style="float: right;
+                                        margin-top: 13px;">
+                                        <a href="#">Forgot Password ?</a>
+                                        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                                        </div>
+                    
+                                        </fieldset>
+                                        <!-- <input type="hidden" name="_token" id="token" > -->
+                                
+                                                    
+                              </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+
+
+    </body>
+</html>
+
+<script>
+
+    $(function(){
+
+        $("form[name = 'loginForm']").validate({
+
+            rules: {
+                email: {
+                    required: true
+                },
+                password: {
+                    required: true,
+                    minlength: 5
+                }
+                
+            },
+
+            messages: {
+                email: {
+                    required: 'pls enter the valid Email'
+                },
+                password: {
+                    required: 'pls enter the Password',
+                    minlength: 'pls enter the atleast five(5) character'
+                }
+            },
+
+            // Make sure the form is submitted to the destination defined
+            // in the "action" attribute of the form when valid
+            submitHandler: function(form) {
+                form.submit();
+            }
+
+        });
+    })
+    
+</script>

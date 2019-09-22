@@ -1,0 +1,313 @@
+body.login-bg {
+	background-image:url(../../IMAGES/login-bg.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-page {
+    background: #191919e0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;	
+}	
+.login-page .login-panel {
+    margin-top: 40%;
+}
+.login-page .panel-default>.panel-heading {
+    color: #f3efef;
+    background-color: #3498db;
+    border-color: #3498db;
+    font-size: 21px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;   
+	padding: 8px 10px;
+}
+.login-page .panel-body {
+    padding: 25px 20px 20px 20px;
+}
+.login-page .form-control {
+    font-size: 16px;
+}	
+.login-page .panel {  
+    border: none;
+    border-radius: 4px;
+	 box-shadow: 0px 0px 10px 0px #303030;
+    -webkit-box-shadow: 0px 0px 10px 0px #303030;
+    -moz-box-shadow: 0px 0px 10px 0px #303030;
+}
+.btn-login {
+    border: 1px solid #089a46;
+    background: #27ae60;
+    box-shadow: 0px 0px 15px 0px #108441 inset;
+    color: #fff;
+    padding: 6px;
+    height: 36px;
+    border-radius: 3px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.btn-login:hover, 
+.btn-login:focus {  
+   box-shadow: none;
+}	
+
+
+/******* Scrollbar ********/
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+.scrollbar a{
+	color: #074E8C;
+}
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+.sidebar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+}
+.sidebar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+.sidebar::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+.sidebar::-webkit-scrollbar-thumb
+{
+	background-color: #999;
+}
+/******* Scrollbar ********/
+
+.navbar-search {
+	margin-left: 92px;
+}
+.navbar-search > li {
+	max-width: 250px;
+    height: 33px;
+    padding-top: 12px;
+}
+.navbar-search > li input {
+	background: transparent;
+    height: 28px;
+	border-color: #ccc;
+	color: #cecece;
+    letter-spacing: 0.5px;
+	border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.navbar-search .btn {
+	background: #3c3c3c;
+    height: 28px;
+    padding: 4px 10px;
+    border-color: #ccc;
+    color: #c1c0c0;
+}
+
+
+
+#page-wrapper {
+	min-height: 553px;
+    background: #fff!important;
+    height: auto;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    border-radius: 3px;	
+    padding: 15px;
+	border:none;
+}
+#page-wrapper {
+    min-height: auto!important;
+    background: #fff0!important;
+    height: auto;
+    box-shadow: none;
+    border-radius: 3px;  
+    padding: 5px;
+    border: none;
+}
+
+.home-count-box .panel  {
+	background: #fff;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 5px 0 #ccc;
+}
+.home-count-box .col-md-3.col-sm-6.col-xs-12 {
+	padding: 0 10px;
+}
+.home-count-box .col-md-3.col-sm-6.col-xs-12:first-child {
+	padding-left: 15px;
+}
+.home-count-box .col-md-3.col-sm-6.col-xs-12:last-child {
+	padding-right: 15px;
+}
+.home-count-box .huge {
+    font-size: 42px;
+    font-weight: 600;
+}
+#showmenu {
+	cursor:pointer;
+}
+.sidebar {
+    background-color: #2980b9;
+}
+.sidebar .nav>li>a {
+    color: #f3f3f3;
+}	
+.sidebar .nav>li>a:focus, .sidebar .nav>li>a:hover {   
+    background-color: #1070ad;
+}
+.sidebar, #page-wrapper {	
+	transition:0.5s;
+}
+.sidebar-toggle .sidebar {
+	margin-left:-250px;	
+}
+.sidebar-toggle #page-wrapper  {
+	margin-left: 15px;	
+}
+.form-group label + i {
+	margin-left:5px;
+}
+.sidebar-toggle .fa-bars:before {
+    content: "\f00d"!important;	
+}
+form .row:last-child .form-group {
+	margin-bottom:0;
+}
+
+/*********** Button Design ***************/
+
+.btn-box .custom-btn-primary { 
+    background-color: #3498db; 
+    border-bottom: 2px solid #2980b9;
+    box-shadow: 0px 2px 0px 0px #2980b9;
+}
+.btn-box .custom-btn-primary .round { background-color: #2980b9; }
+
+.btn-box .custom-btn-success { 
+    background-color: #2ecc71;
+    border-bottom: 2px solid #27ae60;
+    box-shadow: 0px 2px 0px 0px #27ae60;
+}
+.btn-box .custom-btn-success .round {  background-color: #27ae60; }
+
+.btn-box .custom-btn-danger { 
+    background-color: #e74c3c;
+    border-bottom: 2px solid #c0392b;
+    box-shadow: 0px 2px 0px 0px #c0392b;
+}
+.btn-box .custom-btn-danger .round {  background-color: #c0392b; }
+
+.btn-box .custom-btn-default { 
+    background-color: #f1f1f1; 
+    border-bottom: 2px solid #bdc3c7;
+    box-shadow: 0px 2px 0px 0px #bdc3c7;
+	color:#666;
+}
+.btn-box .custom-btn-default .round {  background-color: #bdc3c7; }
+
+.btn-box .custom-btn-alert { 
+   background-color: #e67e22;
+   border-bottom: 2px solid #d35400;
+   box-shadow: 0px 2px 0px 0px #d35400;
+}
+.btn-box .custom-btn-alert .round {  background-color: #d35400; }
+
+
+
+.btn-box a, .btn-box button {
+  text-decoration: none;
+  -moz-border-radius: 3px 6px 3px 6px;
+  -webkit-border-radius: 3px 6px 3px 6px;
+  border-radius: 3px 6px 3px 6px;
+  padding: 8px 50px 6px 20px;
+  margin-right:10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  border:none;
+  outline:none;
+}
+.btn-box a span, .btn-box button span {
+  position: relative;
+  z-index: 3;
+}
+.btn-box a .round, .btn-box button .round {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: 34px;
+  height: 38px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 2;
+}
+.btn-box a .round i, .btn-box button .round i {
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  left: 50%;
+  margin-left: -4px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-box .txt {
+  font-size: 14px;
+  line-height: 1.45;
+}
+.btn-box a:hover, .btn-box button:hover {
+  padding-left: 50px;
+  padding-right: 20px;
+}
+.btn-box  a:hover .round, .btn-box button:hover .round {
+  width: calc(100% - 0px);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn-box  a:hover .round i, .btn-box button:hover .round i {
+  left: 12%;
+}
+
+/*********** Button Design ***************/

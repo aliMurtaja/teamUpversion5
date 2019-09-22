@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <title>Prudent System</title>
+
+        <!-- this is for include the css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="metisMenu.min.css"/>
+        <link rel="stylesheet" href="dataTables.bootstrap.css"/>
+        <link rel="stylesheet" href="responsive.dataTables.scss"/>
+        <link rel="stylesheet" href="styles/startmin.css"/>
+        <link rel="stylesheet" href="styles/morris.css"/>
+        <link rel="stylesheet" href="font-awesome.css"/>
+        <link rel="stylesheet" href="sweetalert2.css"/>
+        <link rel="stylesheet" href="fastselect.min.css"/>
+        <!-- <link rel="stylesheet" href="fastselect.standalone.min.css"/> -->
+        <link rel="stylesheet" href="styles/style.css"/>
+    
+        <!-- this is for include the js -->
+        <script src="jquery.min.js"></script>
+        <script src="sweetalert2.js"></script>
+    
+    
+    
+    
+    
+    </head>
+
+    <body>
+        <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menuid">
+           <div class="navbar-header">
+              <a class="navbar-brand" id="showmenu"><i class="fas fa-bars"></i></a>
+           </div>
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           </button>
+           <ul class="nav navbar-nav navbar-left navbar-top-links">
+              <li><a href="#"><i class="fas fa-bars"></i> Prudent System</a></li>
+           </ul>
+           <ul class="nav navbar-nav navbar-search navbar-top-links">
+              <li class="dropdown sidebar-search1 navbar-inverse">
+            
+              </li>
+           </ul>
+           <ul class="nav navbar-right navbar-top-links">
+              
+              <li class="dropdown">
+                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                 <i class="fa fa-user "></i> PRUDENT SYSTEM <b class="caret"></b>
+                 </a>
+                 <ul class="dropdown-menu dropdown-user">
+                    <li><a href=""><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    </li>
+                    <li><a href=""><i class="fa fa-gear fa-fw"></i>Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href=""><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+                    </li>
+                 </ul>
+              </li>
+           </ul>
+
+
+
+           <div class="navbar-default sidebar" role="navigation" style="overflow-x: hidden; overflow-y: auto; position: fixed; height: 100%;">
+            <div class="sidebar-nav navbar-collapse">
+               <ul class="nav" id="side-menu">
+                  
+                {% for menu in menuSub %}
+                    
+                <a href="#"><i class="{{menu.MENU_CODE}}"></i> {{menu.MENU_NAME}}<span class="fa arrow"></span></a>
+                  
+                  <li>
+                   
+                     <ul class="nav nav-second-level">
+                        
+                        <li>
+                            {% for submenu in menu.sub %}
+                                <a href='{{submenu.SUBMENU_URL}}'>{{submenu.SUBMENU_NAME}}</a>
+                                <input type="hidden" name="user_submenu_id" value="{{submenu.SUBMENU_KID}}" id="user_submenu_{{submenu.SUBMENU_KID}}">
+                            {% endfor %}
+                        </li>
+                        
+                     </ul>
+                     <!-- /.nav-second-level -->
+                  </li>
+                  
+                {% endfor %}  
+               </ul>
+            </div>
+         </div>
+
+
+
+        </nav>
+    </div>
+    </body>        
+
+
+
+
+
+
+
+
+</html>     

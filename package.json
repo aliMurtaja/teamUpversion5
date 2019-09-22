@@ -1,0 +1,41 @@
+{
+  "name": "shoppingbackend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "startnodemon": "nodemon ./bin/www",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "app-root-path": "^2.2.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "csurf": "^1.10.0",
+    "datatables-bootstrap": "0.0.1",
+    "datatables-responsive": "^1.0.7",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.16.2",
+    "express-validator": "^6.2.0",
+    "fastselect": "^0.7.3",
+    "font-awesome": "^4.7.0",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jquery": "^3.4.1",
+    "jquery-validation": "^1.19.1",
+    "metismenu": "^3.0.4",
+    "morgan": "~1.9.1",
+    "morris": "^0.1.4",
+    "mysql": "^2.17.1",
+    "mysql-model": "0.0.3",
+    "node-querybuilder": "^2.0.1",
+    "nodemon": "^1.19.2",
+    "responsive": "^2.0.0",
+    "sweetalert2": "^8.17.6",
+    "timeline": "^3.4.1",
+    "twig": "^1.13.3",
+    "typeorm": "^0.2.18"
+  }
+}
