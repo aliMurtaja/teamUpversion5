@@ -23,7 +23,7 @@
     "font-awesome": "^4.7.0",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-validation": "^1.19.1",
     "metismenu": "^3.0.4",
     "morgan": "~1.9.1",
