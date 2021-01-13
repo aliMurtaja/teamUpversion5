@@ -24,7 +24,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "jquery": "^3.4.1",
-    "jquery-validation": "^1.19.1",
+    "jquery-validation": "^1.19.3",
     "metismenu": "^3.0.4",
     "morgan": "~1.9.1",
     "morris": "^0.1.4",
