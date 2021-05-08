@@ -36,6 +36,6 @@
     "sweetalert2": "^8.17.6",
     "timeline": "^3.4.1",
     "twig": "^1.13.3",
-    "typeorm": "^0.2.18"
+    "typeorm": "^0.2.25"
   }
 }
